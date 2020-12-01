@@ -15,4 +15,7 @@ public class GameRegistry {
         this.gameMementos = new ArrayList<>();
     }
 
+    public int getAttempt(){
+        return this.attempt;
+    }
 }

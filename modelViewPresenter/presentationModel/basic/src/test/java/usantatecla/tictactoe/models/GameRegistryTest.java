@@ -24,6 +24,6 @@ public class GameRegistryTest {
 
     @Test
     public void testInitializationIsOk(){
-        this.gameRegistry.getAttempts();
+        this.gameRegistry.getAttempt();
     }
 }
