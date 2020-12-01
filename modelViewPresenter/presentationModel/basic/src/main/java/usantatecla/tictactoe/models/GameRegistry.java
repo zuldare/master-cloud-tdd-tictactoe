@@ -18,4 +18,8 @@ public class GameRegistry {
     public int getAttempt(){
         return this.attempt;
     }
+
+    public List<GameMemento> getGameMementos(){
+        return this.gameMementos;
+    }
 }
