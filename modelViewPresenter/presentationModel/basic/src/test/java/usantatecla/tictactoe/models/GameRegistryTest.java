@@ -33,6 +33,8 @@ public class GameRegistryTest {
     @Test
     public void testUndo(){
         this.gameRegistry.undo();
+        assertTrue(this.gameRegistry.getAttempt() == 0);
+        assertTrue(this.gameRegistry.getGameMementos().size() ==0);
     }
 
 }
