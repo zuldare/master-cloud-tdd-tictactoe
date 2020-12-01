@@ -14,12 +14,16 @@ public class GameRegistryTest {
 
     @BeforeEach
     private void beforeTest(){
-        this.game = new Game();
+        this.gameRegistry = new GameRegistry(new Game());
     }
 
     @Test
     public void testGameRegistry(){
-        this.gameRegistry = new GameRegistry(this.game);
         assertNotNull(this.gameRegistry);
+    }
+
+    @Test
+    public void testInitializationIsOk(){
+        this.gameRegistry.getAttempts();
     }
 }
