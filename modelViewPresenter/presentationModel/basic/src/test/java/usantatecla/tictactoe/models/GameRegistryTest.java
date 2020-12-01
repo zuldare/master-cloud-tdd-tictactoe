@@ -4,7 +4,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class GameRegistryTest {
 
@@ -24,6 +26,7 @@ public class GameRegistryTest {
 
     @Test
     public void testInitializationIsOk(){
-        this.gameRegistry.getAttempt();
+        assertTrue(this.gameRegistry.getAttempt() == 0);
     }
+
 }
