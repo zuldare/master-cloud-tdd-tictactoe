@@ -28,4 +28,8 @@ public class GameRegistry {
         this.attempt--;
         this.gameMemento = gameMementos.get(attempt);
     }
+
+    public boolean isUndoable(){
+        return this.attempt > 0;
+    }
 }

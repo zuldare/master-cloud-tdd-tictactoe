@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class GameRegistryTest {
 
@@ -28,6 +27,11 @@ public class GameRegistryTest {
     public void testInitializationIsOk(){
         assertTrue(this.gameRegistry.getAttempt() == 0);
         assertTrue(this.gameRegistry.getGameMementos().size() == 0);
+    }
+
+    @Test
+    public void testIsUndoable(){
+        assertFalse(this.gameRegistry.isUndoable());
     }
 
     @Test
