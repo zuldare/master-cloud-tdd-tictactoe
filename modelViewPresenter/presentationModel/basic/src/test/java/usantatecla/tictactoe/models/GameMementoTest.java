@@ -14,6 +14,8 @@ public class GameMementoTest {
     public void testGameMemento(){
         this.gameMemento = new GameMemento();
         assertNotNull(this.gameMemento);
+        assertNotNull(this.gameMemento.getBoard());
+        assertNotNull(this.gameMemento.getTurn());
     }
 
 }
