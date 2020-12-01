@@ -27,6 +27,8 @@ public class GameRegistryTest {
     @Test
     public void testInitializationIsOk(){
         assertTrue(this.gameRegistry.getAttempt() == 0);
+        assertTrue(this.gameRegistry.getGameMementos().size != 0);
     }
+
 
 }
